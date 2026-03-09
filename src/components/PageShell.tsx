@@ -10,7 +10,7 @@ export type PageSection = {
   desc?: string;
   items?: string[];
   columns?: number;
-  variant?: "cards" | "list" | "steps";
+  variant?: string;
 };
 
 export type PageContent = {
