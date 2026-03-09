@@ -9,7 +9,7 @@ export type PageSection = {
   title: string;
   desc?: string;
   items?: string[];
-  columns?: 2 | 3 | 4;
+  columns?: number;
   variant?: "cards" | "list" | "steps";
 };
 
