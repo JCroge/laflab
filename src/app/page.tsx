@@ -5,6 +5,7 @@ import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { useLanguage } from "@/components/LanguageProvider";
+import { contactLinks } from "@/lib/contacts";
 import { navItems } from "@/lib/nav";
 
 const content = {
@@ -233,6 +234,7 @@ const content = {
       emailValue: "hello@lflabs.ai",
       wechatLabel: "WeChat",
       wechatValue: "LF Labs Group",
+      links: contactLinks.en,
     },
     footer: "© 2026 LF Labs Group. All rights reserved.",
     openCollab: "Open Collaboration",
@@ -457,6 +459,27 @@ export default function Home() {
                 <p className="mt-2">{t.contactInfo.wechatValue}</p>
               </div>
             </div>
+            {t.contactInfo.links && t.contactInfo.links.length > 0 && (
+              <div className="mt-8 grid gap-4 text-sm text-slate/70 sm:grid-cols-2 lg:grid-cols-3">
+                {t.contactInfo.links.map((link) => (
+                  <div key={`${link.label}-${link.value}`} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <p className="text-xs uppercase text-slate/50">{link.label}</p>
+                    {link.href ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-2 block text-sm text-white/80 hover:text-white"
+                      >
+                        {link.value}
+                      </a>
+                    ) : (
+                      <p className="mt-2 text-sm text-white/80">{link.value}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       </main>

@@ -1,4 +1,5 @@
 import PageShell from "@/components/PageShell";
+import { contactLinks } from "@/lib/contacts";
 
 const content = {
   zh: {
@@ -269,6 +270,7 @@ const content = {
       address: "VIP Private Reception, Shanghai, China",
       ctaPrimary: "Book Consultation",
       ctaSecondary: "Learn More",
+      links: contactLinks.en,
     },
     footer: "© 2026 LF Labs Group. All rights reserved.",
     companyName: "LF Labs AI Incubation Group",

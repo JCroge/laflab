@@ -13,6 +13,12 @@ export type PageSection = {
   variant?: string;
 };
 
+type ContactLink = {
+  label: string;
+  value: string;
+  href?: string;
+};
+
 export type PageContent = {
   hero: {
     tag: string;
@@ -32,6 +38,7 @@ export type PageContent = {
     address: string;
     ctaPrimary: string;
     ctaSecondary: string;
+    links?: ContactLink[];
   };
   footer: string;
   companyName: string;
@@ -160,6 +167,27 @@ export default function PageShell({ content, ctaLabel }: PageShellProps) {
                 <p className="mt-2">{t.contact.wechat}</p>
               </div>
             </div>
+            {t.contact.links && t.contact.links.length > 0 && (
+              <div className="mt-8 grid gap-4 text-sm text-slate/70 sm:grid-cols-2 lg:grid-cols-3">
+                {t.contact.links.map((link) => (
+                  <div key={`${link.label}-${link.value}`} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <p className="text-xs uppercase text-slate/50">{link.label}</p>
+                    {link.href ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-2 block text-sm text-white/80 hover:text-white"
+                      >
+                        {link.value}
+                      </a>
+                    ) : (
+                      <p className="mt-2 text-sm text-white/80">{link.value}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </section>
       </main>

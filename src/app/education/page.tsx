@@ -1,4 +1,5 @@
 import PageShell from "@/components/PageShell";
+import { contactLinks } from "@/lib/contacts";
 
 const content = {
   zh: {
@@ -178,6 +179,7 @@ const content = {
       address: "北京 / 上海 / 深圳 / 杭州",
       ctaPrimary: "免费试听",
       ctaSecondary: "课程咨询",
+      links: contactLinks.zh,
     },
     footer: "© 2026 LF Labs Group. All rights reserved.",
     companyName: "拉菲实验室（LF Labs）人工智能孵化集团",
@@ -359,6 +361,7 @@ const content = {
       address: "Beijing / Shanghai / Shenzhen / Hangzhou",
       ctaPrimary: "Free Trial",
       ctaSecondary: "Course Consultation",
+      links: contactLinks.en,
     },
     footer: "© 2026 LF Labs Group. All rights reserved.",
     companyName: "LF Labs AI Incubation Group",
