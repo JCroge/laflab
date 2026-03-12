@@ -119,6 +119,7 @@ const content = {
       emailValue: "hello@lflabs.ai",
       wechatLabel: "微信",
       wechatValue: "LF Labs Group",
+      links: contactLinks.zh,
     },
     footer: "© 2026 LF Labs Group. All rights reserved.",
     openCollab: "开放合作",
