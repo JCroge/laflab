@@ -114,7 +114,7 @@ const content = {
     contactSecondary: "预约沟通",
     contactInfo: {
       addressLabel: "地址",
-      addressValue: "中国 · 上海 / 上海人工智能产业园",
+      addressValue: "江苏省苏州市相城区聚贤路365商业广场",
       emailLabel: "邮箱",
       emailValue: "hello@lflabs.ai",
       wechatLabel: "微信",

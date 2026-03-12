@@ -81,7 +81,7 @@ const content = {
       email: "contact@laphitech.com",
       phone: "+86-000-0000-0000",
       wechat: "LF Labs Asset",
-      address: "中国 · 上海 / 上海人工智能产业园",
+      address: "江苏省苏州市相城区聚贤路365商业广场",
       ctaPrimary: "预约沟通",
       ctaSecondary: "获取方案",
       links: contactLinks.zh,
