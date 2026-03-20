@@ -358,7 +358,7 @@ const content = {
       email: "edu@laphitech.com",
       phone: "400-XXX-XXXX",
       wechat: "LaPhiEdu",
-      address: "Beijing / Shanghai / Shenzhen / Hangzhou",
+      address: "Colorado, USA",
       ctaPrimary: "Free Trial",
       ctaSecondary: "Course Consultation",
       links: contactLinks.en,

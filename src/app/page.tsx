@@ -114,9 +114,9 @@ const content = {
     contactSecondary: "预约沟通",
     contactInfo: {
       addressLabel: "地址",
-      addressValue: "江苏省苏州市相城区聚贤路365商业广场",
+      addressValue: "美国科罗拉多州",
       emailLabel: "邮箱",
-      emailValue: "hello@lflabs.ai",
+      emailValue: "lfsubs1@proton.me",
       wechatLabel: "微信",
       wechatValue: "LF Labs Group",
       links: contactLinks.zh,
@@ -230,9 +230,9 @@ const content = {
     contactSecondary: "Schedule a Call",
     contactInfo: {
       addressLabel: "Address",
-      addressValue: "Shanghai AI Industrial Park, China",
+      addressValue: "Colorado, USA",
       emailLabel: "Email",
-      emailValue: "hello@lflabs.ai",
+      emailValue: "lfsubs1@proton.me",
       wechatLabel: "WeChat",
       wechatValue: "LF Labs Group",
       links: contactLinks.en,
@@ -438,7 +438,7 @@ export default function Home() {
                 <p className="mt-3 text-sm text-slate/70">{t.contactDesc}</p>
               </div>
               <div className="flex flex-wrap gap-4">
-                <a className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-midnight" href="mailto:hello@lflabs.ai">
+                <a className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-midnight" href="mailto:lfsubs1@proton.me">
                   {t.contactPrimary}
                 </a>
                 <a className="rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white" href="tel:+86-000-0000-0000">
